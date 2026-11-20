@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "한눈애 — 마음이 닿는 시작",
+  "short_name": "한눈애",
+  "description": "마음이 닿는 시작",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f4f4",
+  "theme_color": "#a44761",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
