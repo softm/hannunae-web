@@ -18,6 +18,7 @@ check('classic JavaScript syntax and deferred local entry points', () => {
   assert(!/<script\b[^>]*type=["']module/.test(html));
   assert(!fs.existsSync(path.join(ROOT, 'core.mjs')));
   for (const tag of html.match(/<script\b[^>]+>/g) || []) {
+    if (/\btype=["']application\/ld\+json["']/.test(tag)) continue;
     assert(/\bdefer\b/.test(tag));
     const src = /src="([^"]+)"/.exec(tag)[1];
     assert(src.startsWith('./'));
